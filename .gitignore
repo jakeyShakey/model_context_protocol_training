@@ -1,0 +1,62 @@
+# Dependencies
+node_modules
+mcp_intro
+.pnpm-store/
+
+# Build outputs
+dist
+dist-ssr
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Slidev specific
+.remote-assets
+.vite-inspect
+components.d.ts
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cache
+.cache
+.temp
+.eslintcache
+.stylelintcache
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov 
+
+# Files
+slides.md-e
+package-lock.json
+
+*.mov
+*.pptx
+*.zip
+*.bak
+*.bak2
+# Folders
+diagrams/
+slides/
