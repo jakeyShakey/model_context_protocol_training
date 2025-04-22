@@ -826,6 +826,117 @@ clicks: 1
 -->
 
 ---
+layout: default
+transition: slide-up
+---
+
+# Evolution of MCP Transport Types
+
+<div class="grid grid-cols-3 gap-6">
+  <!-- First transport type: Stdio -->
+  <div v-click class="relative group transform transition-all duration-500 hover:scale-[1.02]">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg blur opacity-30 group-hover:opacity-80 transition duration-500"></div>
+    <div class="relative p-5 bg-gray-900 rounded-lg border border-blue-500/30 h-full">
+      <div class="mb-3 text-center">
+        <i-carbon-terminal class="text-5xl mb-2 mx-auto text-blue-400"/> 
+        <div class="text-gray-100 font-semibold text-lg">Stdio Transport</div>
+        <div class="text-xs text-gray-400 mt-1">Local Transport</div>
+      </div>
+      <div class="space-y-2 text-sm">
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-blue-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">Uses standard input/output streams</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-blue-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">Ideal for local process communication</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-blue-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">Used in command-line tools and integrations</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-close class="mr-2 text-red-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">Limited to same-machine operations</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second transport type: HTTP with SSE -->
+  <div v-click class="relative group transform transition-all duration-500 hover:scale-[1.02]">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-violet-500 rounded-lg blur opacity-30 group-hover:opacity-80 transition duration-500"></div>
+    <div class="relative p-5 bg-gray-900 rounded-lg border border-purple-500/30 h-full">
+      <div class="mb-3 text-center">
+        <i-carbon-connect class="text-5xl mb-2 mx-auto text-purple-400"/> 
+        <div class="text-gray-100 font-semibold text-lg">HTTP with SSE</div>
+        <div class="text-xs text-gray-400 mt-1">Original Remote Transport</div>
+      </div>
+      <div class="space-y-2 text-sm">
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-purple-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">Server-Sent Events for server→client streaming</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-purple-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">HTTP POST for client→server messages</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-purple-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">Enabled remote MCP servers</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-close class="mr-2 text-red-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">Requires maintaining constant connection state</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third transport type: Streamable HTTP -->
+  <div v-click class="relative group transform transition-all duration-500 hover:scale-[1.02]">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg blur opacity-30 group-hover:opacity-80 transition duration-500"></div>
+    <div class="relative p-5 bg-gray-900 rounded-lg border border-green-500/30 h-full">
+      <div class="mb-3 text-center">
+        <i-carbon-data-player class="text-5xl mb-2 mx-auto text-green-400"/> 
+        <div class="text-gray-100 font-semibold text-lg">Streamable HTTP</div>
+        <div class="text-xs text-gray-400 mt-1">Released March 2025</div>
+      </div>
+      <div class="space-y-2 text-sm">
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-green-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">Enables stateless server architecture</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-green-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">No requirement for long-term connections</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-green-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">More flexible for cloud and serverless deployment</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-2 text-green-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-300">Ideal for modern web architecture patterns</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div v-click class="mt-8 relative group">
+  <div class="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg blur opacity-20 group-hover:opacity-50 transition duration-1000"></div>
+  <div class="relative p-4 bg-gray-900 rounded-lg border border-amber-500/20">
+    <div class="flex items-center">
+      <i-carbon-idea class="text-2xl text-amber-400 mr-3"/>
+      <div class="text-gray-200">
+        <span class="font-bold">Key Benefit:</span> Streamable HTTP enables cloud-native MCP implementations without persistent connections, making it possible to create serverless MCP servers that scale elastically with demand and reduce operational complexity.
+      </div>
+    </div>
+  </div>
+</div>
+
+---
 layout: fact
 ---
 
@@ -899,24 +1010,6 @@ layout: default
   </div>
 </div>
 
----
-layout: center
-class: "text-center"
----
-
-# The Tableau Mapping Problem: Demo
-
-<div class="flex justify-center items-center mt-4">
-  <div class="relative w-[800px] h-[450px] bg-gray-900 rounded-lg overflow-hidden border-2 border-gray-700 flex items-center justify-center">
-    <video 
-      controls
-      class="w-full h-full object-cover">
-      <source src="/workbook_remap.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
-
 <!--
 BEFORE PLAYING:
 - Solving a problem you guys have
@@ -950,7 +1043,7 @@ layout: two-cols
     <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
     <div class="relative p-4 bg-gray-900 rounded-lg border border-blue-500/30 h-full flex flex-col">
       <h3 class="text-lg font-bold mb-2 text-blue-400">1. Define Tool Schema</h3>
-      <div class="overflow-auto flex-1">
+      <div class="overflow-auto flex-1 text-left">
 ```python
 @app.list_tools()
 async def list_tools() -> list[types.Tool]:
@@ -981,7 +1074,7 @@ async def list_tools() -> list[types.Tool]:
     <div class="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
     <div class="relative p-4 bg-gray-900 rounded-lg border border-blue-500/30 h-full flex flex-col">
       <h3 class="text-lg font-bold mb-2 text-green-400">2. Implement Tool Handlers</h3>
-      <div class="overflow-auto flex-1">
+      <div class="overflow-auto flex-1 text-left">
 ```python
 @app.call_tool()
 async def call_tool(
@@ -1021,7 +1114,7 @@ layout: two-cols
     <div class="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
     <div class="relative p-4 bg-gray-900 rounded-lg border border-amber-500/30 h-full flex flex-col">
       <h3 class="text-lg font-bold mb-2 text-amber-400">1. Define Prompt Template</h3>
-      <div class="overflow-auto flex-1">
+      <div class="overflow-auto flex-1 text-left">
 ```python
 @app.list_prompts()
 async def list_prompts():
@@ -1057,7 +1150,7 @@ async def list_prompts():
     <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-violet-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
     <div class="relative p-4 bg-gray-900 rounded-lg border border-purple-500/30 h-full flex flex-col">
       <h3 class="text-lg font-bold mb-2 text-purple-400">2. Implement Prompt Handler</h3>
-      <div class="overflow-auto flex-1">
+      <div class="overflow-auto flex-1 text-left">
 ```python
 @app.get_prompt()
 async def get_prompt(name: str, arguments: Any):
