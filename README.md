@@ -1,128 +1,61 @@
-# Model Context Protocol (MCP) Presentation
+# Model Context Protocol (MCP) Implementation Guide
 
-This repository contains a presentation about the Model Context Protocol (MCP) built using [Slidev](https://sli.dev/), a modern presentation tool for developers.
+## Overview
 
-## Prerequisites
+This repository contains a comprehensive Slidev presentation on implementing the Model Context Protocol (MCP) for AI integration projects. The presentation covers the core architecture of MCP, practical examples, and best practices for developers working with Large Language Models (LLMs) like Claude and other AI systems.
 
-Before you can run this presentation, you need to have the following installed:
+## What is Model Context Protocol?
 
-- [Node.js](https://nodejs.org/) (v14 or above)
-- [npm](https://www.npmjs.com/) (usually comes with Node.js)
-- [Git](https://git-scm.com/) (for version control)
+The Model Context Protocol (MCP) is an API standard developed by Anthropic that enables seamless LLM tool integration in AI applications. It provides a structured approach to context management for AI agents and establishes a consistent protocol for communication between LLMs and external tools.
+
+## Presentation Contents
+
+This developer guide and tutorial covers:
+
+- **Core Architecture**: Understanding the fundamental components of the Model Context Protocol
+- **Implementation Guide**: Step-by-step instructions for implementing MCP clients and servers (with Python examples)
+- **AI Integration Patterns**: Best practices for integrating external tools with LLMs
+- **Tool Use Examples**: Practical demonstrations of agentic AI capabilities
+- **Use Cases**: Real-world applications including the Tableau integration example
 
 ## Getting Started
 
-Follow these steps to run the presentation locally:
+To view this presentation:
 
-1. **Clone this repository** (if you haven't already)
+1. Clone this repository
+2. Install [Slidev](https://sli.dev/) if you haven't already
+3. Run `npm install` (or `yarn install`)
+4. Run `npm run dev` (or `yarn dev`)
+5. Open your browser to the URL displayed in the terminal
 
-   ```bash
-   git clone <repository-url>
-   cd mcp
-   ```
+## Why Model Context Protocol?
 
-2. **Install dependencies**
+When developing AI applications that require tool integration, the Model Context Protocol offers several advantages:
 
-   ```bash
-   npm install
-   ```
+- **Standardized Communication**: Consistent JSON-RPC based protocol for AI-tool interactions
+- **Context Management**: Efficient handling of context between the LLM and external systems
+- **Simplified Development**: Clear patterns for building agentic AI applications
+- **Extensibility**: Easy integration with new tools and services
 
-3. **Start the presentation**
+## Use Cases
 
-   ```bash
-   npm run dev
-   ```
+The MCP approach is valuable for various artificial intelligence and machine learning applications, including:
 
-   This will start the development server and open the presentation in your default web browser. If it doesn't open automatically, you can access it at [http://localhost:3030](http://localhost:3030).
+- Data analysis pipelines with tools like Tableau
+- AI assistants that interact with external services
+- Custom LLM tool development
+- Building comprehensive AI agents with multiple capabilities
 
-## Navigation Controls
+## Additional Resources
 
-Once the presentation is running:
+- [Official Anthropic MCP Documentation](https://docs.anthropic.com/claude/docs/model-context-protocol)
+- [Claude API Documentation](https://docs.anthropic.com/claude/reference/getting-started-with-the-api)
+- [AI Integration Best Practices](https://docs.anthropic.com/claude/docs/introduction-to-the-claude-api)
 
-- **Arrow keys**: Navigate between slides (left/right)
-- **Space**: Next slide
-- **Shift + Space**: Previous slide
-- **o**: Toggle overview mode
-- **d**: Toggle dark mode
-- **p**: Toggle presenter mode
+## Contributing
 
-## Editing the Presentation
+Contributions to improve this AI development guide are welcome! Please feel free to submit pull requests or open issues with suggestions.
 
-The main content of the presentation is in the `slides.md` file. You can edit this file to modify the presentation content.
+## Tags
 
-## Git Version Control
-
-This project includes a `.gitignore` file configured to exclude unnecessary files like `node_modules` and build artifacts.
-
-### Setting up Git for this project
-
-If you're starting from scratch:
-
-1. **Initialize a Git repository**
-
-   ```bash
-   git init
-   ```
-
-2. **Add your files**
-
-   ```bash
-   git add .
-   ```
-
-3. **Commit your changes**
-
-   ```bash
-   git commit -m "Initial commit"
-   ```
-
-4. **Add a remote repository** (replace with your actual repository URL)
-
-   ```bash
-   git remote add origin https://github.com/yourusername/your-repo-name.git
-   ```
-
-5. **Push to the remote repository**
-
-   ```bash
-   git push -u origin main
-   ```
-
-### Making changes
-
-After making changes to your presentation:
-
-```bash
-git add .
-git commit -m "Description of your changes"
-git push
-```
-
-## Building for Production
-
-To build the presentation for production deployment:
-
-```bash
-npm run build
-```
-
-This will generate a static version of the presentation in the `dist` folder that you can deploy to any static hosting service.
-
-## Exporting to PDF
-
-To export the presentation to PDF:
-
-```bash
-npm run export
-```
-
-This will generate a PDF version of your presentation.
-
-## Learn More About Slidev
-
-- [Slidev Documentation](https://sli.dev/)
-- [Slidev GitHub Repository](https://github.com/slidevjs/slidev)
-
-## About Model Context Protocol (MCP)
-
-The Model Context Protocol (MCP) is a standardized interface for connecting AI models to external data and tools. This presentation provides an overview of MCP, its architecture, and implementation guidelines. 
+ai-integration, model-context-protocol, anthropic, llm-integration, ai-agents, tool-integration, llm-tools, context-management, api-standard, ai-protocol, developer-guide, tutorial, training, examples, claude, python, json-rpc, artificial-intelligence, machine-learning, ai-development, slidev, presentation
