@@ -1353,90 +1353,121 @@ layout: default
 
 # The Future of MCP
 
-<div class="mt-8 mb-6 text-center">
+<div class="mt-5 mb-3 text-center">
   <p class="text-xl max-w-3xl mx-auto text-gray-800">
-    <strong>THE POWER OF MCP IS ONLY GOING TO GROW</strong>
-    </p>
-    <p class="text-lg max-w-3xl mx-auto text-gray-600">
-    The current development road map looks like:
+    <strong>THE OFFICIAL MCP ROADMAP</strong>
+  </p>
+  <p class="text-sm max-w-3xl mx-auto text-gray-600">
+    Last updated: March 27, 2025
   </p>
 </div>
 
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-3 gap-4">
   <div v-click class="relative group">
-    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
-    <div class="relative p-4 bg-gray-900 rounded-lg border border-blue-500/30">
-      <h3 class="text-xl font-bold mb-4 text-blue-400">Remote MCP Support</h3>
-      <div class="space-y-2 text-sm">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+    <div class="relative p-3 bg-gray-900 rounded-lg border border-blue-500/30 h-full">
+      <div class="text-center mb-1">
+        <i-carbon-certificate class="text-3xl mb-1 text-blue-400"/>
+        <h3 class="text-lg font-bold text-blue-400">Validation</h3>
+      </div>
+      <div class="space-y-1 text-sm">
         <div class="flex items-start">
-          <i-carbon-security class="mr-2 text-blue-400 mt-1 flex-shrink-0"/> 
-          <span class="text-gray-200">Authentication & Authorization with OAuth 2.0</span>
+          <i-carbon-checkmark class="mr-1 text-blue-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">Reference Client Implementations for protocol features</span>
         </div>
         <div class="flex items-start">
-          <i-carbon-network-4 class="mr-2 text-blue-400 mt-1 flex-shrink-0"/> 
-          <span class="text-gray-200">Service Discovery for remote connections</span>
-        </div>
-        <div class="flex items-start">
-          <i-carbon-cloud class="mr-2 text-blue-400 mt-1 flex-shrink-0"/> 
-          <span class="text-gray-200">Stateless operations for serverless environments</span>
+          <i-carbon-checkmark class="mr-1 text-blue-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">Compliance Test Suites for verifying implementations</span>
         </div>
       </div>
     </div>
   </div>
 
   <div v-click class="relative group">
-    <div class="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
-    <div class="relative p-4 bg-gray-900 rounded-lg border border-green-500/30">
-      <h3 class="text-xl font-bold mb-4 text-green-400">Advanced Agent Support</h3>
-      <div class="space-y-2 text-sm">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-violet-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+    <div class="relative p-3 bg-gray-900 rounded-lg border border-purple-500/30 h-full">
+      <div class="text-center mb-1">
+        <i-carbon-package class="text-3xl mb-1 text-purple-400"/>
+        <h3 class="text-lg font-bold text-purple-400">Registry</h3>
+      </div>
+      <div class="space-y-1 text-sm">
         <div class="flex items-start">
-          <i-carbon-tree-view-alt class="mr-2 text-green-400 mt-1 flex-shrink-0"/> 
-          <span class="text-gray-200">Hierarchical agent systems with namespacing</span>
+          <i-carbon-checkmark class="mr-1 text-purple-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">Centralized MCP Registry for server discovery and metadata</span>
         </div>
         <div class="flex items-start">
-          <i-carbon-flow class="mr-2 text-green-400 mt-1 flex-shrink-0"/> 
-          <span class="text-gray-200">Interactive workflows with permission management</span>
+          <i-carbon-checkmark class="mr-1 text-purple-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">API layer for third-party marketplaces and discovery</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div v-click class="relative group">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+    <div class="relative p-3 bg-gray-900 rounded-lg border border-green-500/30 h-full">
+      <div class="text-center mb-1">
+        <i-carbon-tree-view-alt class="text-3xl mb-1 text-green-400"/>
+        <h3 class="text-lg font-bold text-green-400">Agents</h3>
+      </div>
+      <div class="space-y-1 text-sm">
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-1 text-green-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">Agent Graphs enabling complex agent topologies</span>
         </div>
         <div class="flex items-start">
-          <i-carbon-data-player class="mr-2 text-green-400 mt-1 flex-shrink-0"/> 
-          <span class="text-gray-200">Streaming results for real-time agent operations</span>
+          <i-carbon-checkmark class="mr-1 text-green-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">Interactive Workflows with granular permissioning</span>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div v-click class="mt-8 grid grid-cols-3 gap-4">
-  <div class="relative group p-4 rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
-    <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/30 to-amber-700/30 group-hover:opacity-100 transition-opacity"></div>
-    <div class="relative z-10">
-      <i-carbon-package class="text-3xl mb-2 text-yellow-400"/>
-      <div class="font-bold">Distribution & Discovery</div>
-      <div class="text-sm opacity-80">Standardized packaging and server registry</div>
+<div v-click class="grid grid-cols-2 gap-4 mt-4">
+  <div class="relative group">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+    <div class="relative p-3 bg-gray-900 rounded-lg border border-yellow-500/30 h-full">
+      <div class="text-center mb-1">
+        <i-carbon-video class="text-3xl mb-1 text-yellow-400"/>
+        <h3 class="text-lg font-bold text-yellow-400">Multimodality</h3>
+      </div>
+      <div class="space-y-1 text-sm">
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-1 text-yellow-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">Additional Modalities: video and other media types</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-1 text-yellow-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">Streaming: multipart, chunked messages, bidirectional</span>
+        </div>
+      </div>
     </div>
   </div>
-  
-  <div class="relative group p-4 rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
-    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-indigo-700/30 group-hover:opacity-100 transition-opacity"></div>
-    <div class="relative z-10">
-      <i-carbon-video class="text-3xl mb-2 text-purple-400"/>
-      <div class="font-bold">Additional Modalities</div>
-      <div class="text-sm opacity-80">Expanding beyond text to audio, video, and more</div>
-    </div>
-  </div>
-  
-  <div class="relative group p-4 rounded-lg overflow-hidden transition-all duration-500 hover:scale-105">
-    <div class="absolute inset-0 bg-gradient-to-br from-red-500/30 to-pink-700/30 group-hover:opacity-100 transition-opacity"></div>
-    <div class="relative z-10">
-      <i-carbon-collaborate class="text-3xl mb-2 text-red-400"/>
-      <div class="font-bold">Community-Led Standards</div>
-      <div class="text-sm opacity-80">Open governance and standardization initiatives</div>
+
+  <div class="relative group">
+    <div class="absolute -inset-0.5 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+    <div class="relative p-3 bg-gray-900 rounded-lg border border-red-500/30 h-full">
+      <div class="text-center mb-1">
+        <i-carbon-collaborate class="text-3xl mb-1 text-red-400"/>
+        <h3 class="text-lg font-bold text-red-400">Governance</h3>
+      </div>
+      <div class="space-y-1 text-sm">
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-1 text-red-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">Community-Led Development fostering a collaborative ecosystem</span>
+        </div>
+        <div class="flex items-start">
+          <i-carbon-checkmark class="mr-1 text-red-400 mt-1 flex-shrink-0"/> 
+          <span class="text-gray-200">Transparent Standardization via industry bodies</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <!--
-This slide outlines the future roadmap for MCP, highlighting key initiatives planned for 2025 and beyond. The focus areas include enabling remote connections, enhancing agent capabilities, improving distribution mechanisms, supporting new modalities beyond text, and fostering community-led standards development. These initiatives aim to make MCP more accessible, powerful, and widely adopted across the AI ecosystem.
+This slide presents the official MCP roadmap organized into five key focus areas: Validation, Registry, Agents, Multimodality, and Governance. These initiatives reflect Anthropic's priorities for the next six months, though they may evolve with community input.
 -->
 
 ---
